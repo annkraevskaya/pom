@@ -23,3 +23,5 @@ class TestAddToCartProducts(BaseTest):
         self.products_page.click_add_to_cart_tshirt_red()
         time.sleep(1)
 
+
+

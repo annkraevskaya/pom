@@ -13,3 +13,5 @@ class BasePage(metaclass=MetaLocator):
 
     def open(self):
         self.driver.get(self._PAGE_URL)
+
+
