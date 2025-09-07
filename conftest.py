@@ -26,4 +26,3 @@ def auto_login(driver):  # Получаем driver как зависимость
         driver.find_element("xpath", "//input[@id='user-name']").send_keys("standard_user")
         driver.find_element("xpath", "//input[@id='password']").send_keys("secret_sauce")
         driver.find_element("xpath", "//input[@type='submit']").click()
-

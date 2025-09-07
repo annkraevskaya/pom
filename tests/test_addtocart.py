@@ -24,4 +24,3 @@ class TestAddToCartProducts(BaseTest):
         time.sleep(1)
 
 
-

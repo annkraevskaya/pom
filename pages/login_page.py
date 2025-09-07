@@ -1,7 +1,6 @@
 from base.base_pages import BasePage
 
 
-
 class LoginPage(BasePage):
 
     _PAGE_URL = "https://www.saucedemo.com/"
