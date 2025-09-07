@@ -16,3 +16,4 @@ class TestLogin(BaseTest):
         self.products_page.click_add_to_cart_fleece_jacket()
         time.sleep(2)
 
+

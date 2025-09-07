@@ -12,3 +12,4 @@ class MetaLocator(type):
                     attrs[key] = ("css selector", value)
         return type.__new__(cls, name, bases, attrs)
 
+
