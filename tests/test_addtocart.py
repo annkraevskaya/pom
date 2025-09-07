@@ -1,16 +1,12 @@
-import allure
 import time
 
 from pages.login_page import LoginPage
 from base.base_pages import BasePage
 from base.base_test import BaseTest
-from allure_commons.types import AttachmentType
 
 
-@allure.feature("Покупка товара")
 class TestAddToCartProducts(BaseTest):
 
-    @allure.story("Добавление товара в корзину")
     def test_add_to_cart_product(self):
         self.products_page.open()
 
