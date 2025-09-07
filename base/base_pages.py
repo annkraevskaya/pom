@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.remote.webdriver import WebDriver
 from metaclasses.meta_locator import MetaLocator
 
@@ -12,6 +13,7 @@ class BasePage(metaclass=MetaLocator):
 
 
     def open(self):
-        self.driver.get(self._PAGE_URL)
+        with allure.step(f"Открытие {self._PAGE_URL} страницы"):
+            self.driver.get(self._PAGE_URL)
 
 
