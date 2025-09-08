@@ -1,26 +1,50 @@
 import time
 import allure
-import pytest
-from data.credentials import Credentials
-from base.base_test import BaseTest
-from allure_commons.types import Severity
+import pytest     # Для маркировки тестов
+from data.credentials import Credentials # Импорт класса Credentials для безопасного использования/хранения логина и пароля
+from base.base_test import BaseTest  # Базовый класс тестов
+from allure_commons.types import Severity  # Для указания серьезности теста
 
 
-@allure.epic("Аккаунт")
-@allure.feature("Авторизация и покупка")
-@allure.story("Страницы")
 
-class TestLogin(BaseTest):
-
-    @pytest.mark.smoke
-    @allure.severity(Severity.BLOCKER)
-    @allure.step("Авторизация на сайте")
+@allure.epic("Пользовательский аккаунт")
+@allure.feature("Авторизация")
+@allure.story("Успешная авторизация")
+class TestAuthorization(BaseTest):
+    @pytest.mark.smoke  # Маркировка теста как smoke
+    @allure.severity(Severity.BLOCKER)  # Высокий уровень важности теста
+    @allure.step("Авторизация на сайте")  # Шаг в отчете
     def test_login(self):
-        self.login_page.open()
+        self.login_page.open()  # Открываем страницу логина
         self.login_page.enter_login(Credentials.LOGIN)
         self.login_page.enter_password(Credentials.PASSWORD)
         self.login_page.login_button()
         time.sleep(2)
+
+
+
+
+
+
+
+
+
+@allure.epic("Оформление заказа")
+@allure.feature("Полный цикл покупки")
+@allure.story("Добавление 3х товаров в корзину")
+
+class TestCheckout(BaseTest):  #Создание класса тестов+наследование BaseTest
+
+    @pytest.mark.regression  # Маркировка теста как regression
+    @allure.severity(Severity.BLOCKER) # Высокий уровень важности теста
+    @allure.step("Авторизация на сайте") # Шаг в отчете
+    def test_login(self):
+        self.login_page.open() # Открываем страницу логина
+        self.login_page.enter_login(Credentials.LOGIN)
+        self.login_page.enter_password(Credentials.PASSWORD)
+        self.login_page.login_button()
+        time.sleep(2)
+
 
 
 
@@ -69,6 +93,16 @@ class TestLogin(BaseTest):
         time.sleep(1)
         with allure.step("url"):
             assert self.driver.current_url == "https://www.saucedemo.com/checkout-complete.html"
+
+
+
+
+
+
+
+
+
+
 
 
 
