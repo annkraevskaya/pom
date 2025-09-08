@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91c2c9a3-9343-475c-b3dc-d3f4e065cc47" name="Changes" comment="1" />
+    <list default="true" id="91c2c9a3-9343-475c-b3dc-d3f4e065cc47" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,20 +20,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Anna &lt;kraevskayaannaa@mail.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "annkraevskaya"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;annkraevskaya&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/annkraevskaya/pom",
-    "accountId": "447ff1a8-fa16-464c-8b56-a148cfb83628"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/annkraevskaya/pom&quot;,
+    &quot;accountId&quot;: &quot;447ff1a8-fa16-464c-8b56-a148cfb83628&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -53,6 +61,10 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
+    ],
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
       &quot;directory&quot;,
       &quot;repository&quot;
     ]
@@ -141,15 +153,35 @@
       <option name="project" value="LOCAL" />
       <updated>1757273643219</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Delete eval &quot;$(ssh-agent -s)&quot;.pub&#10;продолжение">
+      <option name="closed" value="true" />
+      <created>1757279235594</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757279235594</updated>
+    </task>
+    <task id="LOCAL-00007" summary="прод">
+      <option name="closed" value="true" />
+      <created>1757279262238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1757279262238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit with all project files and IDE settings" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Delete eval &quot;$(ssh-agent -s)&quot;.pub&#10;продолжение" />
+    <MESSAGE value="Delete eval &quot;$(ssh-agent -s)&quot;.pub" />
+    <MESSAGE value="прод" />
+    <option name="LAST_COMMIT_MESSAGE" value="прод" />
   </component>
 </project>

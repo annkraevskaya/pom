@@ -7,10 +7,13 @@ class LoginPage(BasePage):
 
     _PAGE_URL = "https://www.saucedemo.com/"
 
+    # Локаторы полей для авторизации:
+
     _LOGIN_FIELD = "//input[@placeholder='Username']"
     _PASSWORD_FIELD = "//input[@placeholder='Password']"
     _LOGIN_BUTTON = "//input[@type='submit']"
 
+    # Шаги (методы взаимодействия)
     @allure.step("Ввод логина")
     def enter_login(self, login):
         self.driver.find_element(*self._LOGIN_FIELD).send_keys(login)

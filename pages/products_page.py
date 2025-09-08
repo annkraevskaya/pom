@@ -1,6 +1,6 @@
 import allure
 from base.base_pages import BasePage
-from conftest import driver
+
 
 
 class ProductsPage(BasePage):
@@ -10,12 +10,15 @@ class ProductsPage(BasePage):
     # Products Locators:
 
     _ADD_TO_CART_BACKPACK = "//button[@name='add-to-cart-sauce-labs-backpack']"
-    _ADD_TO_CART_BIKE_LIGHT ="// button[ @ id = 'add-to-cart-sauce-labs-bike-light']"
+    _ADD_TO_CART_BIKE_LIGHT ="//button[ @ id = 'add-to-cart-sauce-labs-bike-light']"
     _ADD_TO_CART_BOLT_TSHIRT = "//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"
     _ADD_TO_CART_FLEECE_JACKET = "//button[@name='add-to-cart-sauce-labs-fleece-jacket']"
     _ADD_TO_CART_ONESIE = "//button[@id='add-to-cart-sauce-labs-onesie']"
     _ADD_TO_CART_TSHIRT_RED = "//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']"
+    _BASKET_ICON = "//a[@class='shopping_cart_link']"
 
+
+    # ШАГИ
     @allure.step("Добавить рюкзак в корзину")
     def click_add_to_cart_backpack(self):
         self.driver.find_element(*self._ADD_TO_CART_BACKPACK).click()
@@ -39,6 +42,10 @@ class ProductsPage(BasePage):
     @allure.step("Добавить красное боди в корзину")
     def click_add_to_cart_tshirt_red(self):
         self.driver.find_element(*self._ADD_TO_CART_TSHIRT_RED).click()
+
+
+    def go_to_cart(self):
+        self.driver.find_element(*self._BASKET_ICON).click()
 
 
 
